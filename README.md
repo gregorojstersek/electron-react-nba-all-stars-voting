@@ -1,4 +1,4 @@
-# NBA All Stars Voting
+# NBA All Stars Voting 2019
 
 ## Features:
 
@@ -11,9 +11,7 @@ Electron, React, Webpack, ES8, Puppeteer and others
 ## Installation:
 
 ```bash
-clone the repository
-
-# 💡 Install dependencies
+# Install dependencies
 yarn
 
 # Development
@@ -22,3 +20,7 @@ yarn dev
 # Production build
 yarn package
 ```
+
+## Acknowledgments
+
+Based on electron-react-boilerplate, a boilerplate for scalable cross-platform desktop apps

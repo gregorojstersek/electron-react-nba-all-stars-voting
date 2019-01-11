@@ -392,8 +392,6 @@ export default class Home extends Component<Props> {
         </Grid>
         <br />
         <br />
-        <br />
-        <br />
         <div style={{ textAlign: 'center' }}>
           {!this.state.canNbaVote ? (
             <span style={{ color: 'red' }}>
@@ -426,6 +424,19 @@ export default class Home extends Component<Props> {
           >
             Vote on NBA.com
           </Button>
+          <br />
+          <br />
+          {this.isValidEmail(this.state.email) &&
+          this.state.name &&
+          this.state.canNbaVote ? (
+            <div style={{ textAlign: 'center' }} className="black">
+              (solve captcha and submit)
+              <br />
+              <br />
+            </div>
+          ) : (
+            ''
+          )}
         </div>
       </div>
     );
