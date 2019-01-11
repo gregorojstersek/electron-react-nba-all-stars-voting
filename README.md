@@ -2,7 +2,7 @@
 
 ## Features:
 
-Vote on Google and nba.com with pre made selection handled by Puppeteer and Chromium.
+Vote on Google and nba.com with pre made selection handled by Puppeteer and Chromium. After the vote - a 24h countdown appears and you can vote again after the countdown finishes.
 
 ## Technologies:
 

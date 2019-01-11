@@ -2,7 +2,7 @@
   "name": "electron-react-nba-all-stars-voting",
   "productName": "Nba All Stars Voting",
   "version": "0.17.1",
-  "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development",
+  "description": "NBA All Stars Voting electron app for easier voting and keeping track.",
   "scripts": {
     "build": "concurrently \"yarn build-main\" \"yarn build-renderer\"",
     "build-dll": "cross-env NODE_ENV=development webpack --config ./configs/webpack.config.renderer.dev.dll.babel.js --colors",
