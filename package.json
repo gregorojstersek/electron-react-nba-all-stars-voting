@@ -1,6 +1,6 @@
 {
-  "name": "electron-react-boilerplate",
-  "productName": "ElectronReact",
+  "name": "electron-react-nba-all-stars-voting",
+  "productName": "Nba All Stars Voting",
   "version": "0.17.1",
   "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development",
   "scripts": {
@@ -57,8 +57,8 @@
   },
   "main": "./app/main.prod.js",
   "build": {
-    "productName": "ElectronReact",
-    "appId": "org.develar.ElectronReact",
+    "productName": "NBA All Stars Voting",
+    "appId": "org.develar.NBAASV",
     "files": [
       "app/dist/",
       "app/app.html",
@@ -104,45 +104,35 @@
       "owner": "electron-react-boilerplate",
       "repo": "electron-react-boilerplate",
       "private": false
-    }
+    },
+    "asar": true,
+    "asarUnpack": "node_modules/puppeteer/.local-chromium/**/*"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/electron-react-boilerplate/electron-react-boilerplate.git"
   },
   "author": {
-    "name": "Electron React Boilerplte Maintainers",
-    "email": "electronreactboilerplate@gmail.com",
-    "url": "https://electron-react-boilerplate.js.org"
+    "name": "Gregor Ojstersek",
+    "email": "info@gregorojstersek.com",
+    "url": "https://gregorojstersek.com"
   },
   "contributors": [
-    {
-      "name": "Vikram Rangaraj",
-      "email": "vikr01@icloud.com",
-      "url": "https://github.com/vikr01"
-    },
-    {
-      "name": "Amila Welihinda",
-      "email": "amilajack@gmail.com",
-      "url": "https://github.com/amilajack"
-    }
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues"
+    "url": "https://github.com/gregorojstersek/electron-react-nba-all-stars-voting/issues"
   },
   "keywords": [
     "electron",
-    "boilerplate",
     "react",
-    "redux",
-    "flow",
-    "sass",
-    "webpack",
-    "hot",
-    "reload"
+    "nba",
+    "all",
+    "stars",
+    "luka",
+    "goran"
   ],
-  "homepage": "https://github.com/electron-react-boilerplate/electron-react-boilerplate#readme",
+  "homepage": "https://github.com/gregorojstersek/electron-react-nba-all-stars-voting#readme",
   "jest": {
     "testURL": "http://localhost/",
     "moduleNameMapper": {
@@ -256,11 +246,17 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.5.0",
+    "@material-ui/core": "^3.8.2",
+    "@material-ui/icons": "^3.0.2",
+    "asar": "^0.14.6",
     "devtron": "^1.4.0",
+    "easytimer": "^1.1.1",
     "electron-debug": "^2.0.0",
     "electron-log": "^2.2.17",
     "electron-updater": "^3.2.3",
     "history": "^4.7.2",
+    "moment": "^2.23.0",
+    "puppeteer": "^1.11.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-hot-loader": "^4.3.12",
@@ -269,7 +265,8 @@
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
-    "source-map-support": "^0.5.9"
+    "source-map-support": "^0.5.9",
+    "typeface-roboto": "^0.0.54"
   },
   "devEngines": {
     "node": ">=7.x",

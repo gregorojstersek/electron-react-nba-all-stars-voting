@@ -10,10 +10,12 @@
  *
  * @flow
  */
-import { app, BrowserWindow } from 'electron';
+import { app, BrowserWindow, ipcMain, shell } from 'electron';
 import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
 import MenuBuilder from './menu';
+
+const scraper = require('./scraper');
 
 export default class AppUpdater {
   constructor() {
@@ -99,4 +101,19 @@ app.on('ready', async () => {
   // Remove this if your app does not use auto updates
   // eslint-disable-next-line
   new AppUpdater();
+});
+
+ipcMain.on('vote-on-nba', async (event, args) => {
+  await scraper.voteOnNba(args.name, args.email);
+  await mainWindow.send('vote-on-nba-return', true);
+});
+
+ipcMain.on('vote-on-google-for-luka', async () => {
+  shell.openExternal('https://www.google.com/search?q=luka+doncic');
+  await mainWindow.send('vote-on-google-for-luka-return', true);
+});
+
+ipcMain.on('vote-on-google-for-goran', async () => {
+  shell.openExternal('https://www.google.com/search?q=goran+dragic');
+  await mainWindow.send('vote-on-google-for-goran-return', true);
 });
