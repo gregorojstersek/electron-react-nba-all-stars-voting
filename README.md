@@ -23,4 +23,4 @@ yarn package
 
 ## Acknowledgments
 
-Based on electron-react-boilerplate, a boilerplate for scalable cross-platform desktop apps
+Based on [electron-react-boilerplate](https://github.com/electron-react-boilerplate), a boilerplate for scalable cross-platform desktop apps
